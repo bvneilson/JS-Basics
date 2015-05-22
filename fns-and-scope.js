@@ -63,7 +63,7 @@ var welcome = function(){
 
 
   //Answer Here
-//
+false, 0, ""(empty string), null, undefined, NaN. //Check for falsy values by using conditional statements.
 
 
 //Next Problem
