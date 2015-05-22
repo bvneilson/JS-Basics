@@ -53,7 +53,7 @@ var welcome = function(){
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+//Parameters are the conditions set by the function, and arguments are what you run through the function
 
 //Next problem
 
@@ -63,7 +63,7 @@ var welcome = function(){
 
 
   //Answer Here
-
+//
 
 
 //Next Problem
@@ -73,13 +73,17 @@ var welcome = function(){
 //Create a function called myName that returns your name
 
   //Code Here
+  var myName = function(){
+  	return 'Brennan';
+  }
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName
 //Now alert the result of invoking newMyName
-
+var result = newMyName();
+alert(result);
 
 
 //Next problem
@@ -89,9 +93,17 @@ var welcome = function(){
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+var outerFn = function(){
+	return function(){
+		return 'Brennan';
+	};
+};
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
+
+innerFn();
+
